@@ -20,27 +20,6 @@
     <module>server</module>
     <module>webapp</module>
   </modules>
-
-  <distributionManagement>
-    <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/maven-project-site</url>
-    </site>
-	  
-	  
-	<repository>
-		<id>deploymentRepo</id>
-		<name>Internal Releases</name>
-		<url>http://35.237.189.162:8081/repository/maven-releases/</url>
-	</repository>
- 
-	<snapshotRepository>
-		<id>deploymentRepo</id>
-		<name>Internal Releases</name>
-		<url>http://35.237.189.162:8081/repository/maven-snapshots//</url>
-	</snapshotRepository>
-</distributionManagement>
   
 
   <build>
@@ -233,6 +212,21 @@
   <prerequisites>
     <maven>3.0.3</maven>
   </prerequisites>
+	  <distributionManagement>
+    
+	  
+	<repository>
+		<id>deploymentRepo</id>
+		<name>Internal Releases</name>
+		<url>http://35.237.189.162:8081/repository/maven-releases/</url>
+	</repository>
+ 
+	<snapshotRepository>
+		<id>deploymentRepo</id>
+		<name>Internal Releases</name>
+		<url>http://35.237.189.162:8081/repository/maven-snapshots//</url>
+	</snapshotRepository>
+</distributionManagement>
 
          
 </project>
