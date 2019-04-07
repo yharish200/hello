@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'gcp' }
+    agent { label 'gcp1' }
  tools{
   maven 'm3'
  }
